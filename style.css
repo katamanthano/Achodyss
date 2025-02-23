@@ -1,4 +1,4 @@
-/* Le body occupe toute la hauteur de l'écran et applique un fond de couleur unie */
+/* Ton style existant */
 body, html {
     height: 100%;
     margin: 0;
@@ -26,14 +26,12 @@ footer {
     text-align: center;
 }
 
-/* Animation du logo avec un effet "pop" */
 .logo {
     max-width: 100%;
     height: auto;
     animation: popIn 1s ease-out forwards;
 }
 
-/* Définition de l'animation */
 @keyframes popIn {
     0% {
         transform: scale(0);
@@ -51,31 +49,32 @@ footer {
 /* Nouveau CSS pour la boîte de dialogue et le visage */
 .dialog-container {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
 }
 
 .character-face {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .dialog-box {
-    width: 80%;
-    max-width: 600px;
     background-color: #333;
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 20px;
-    color: white;
+    max-width: 600px;
+    width: 80%;
 }
 
 .dialog-text {
     font-size: 18px;
-    text-align: center;
+    text-align: left;
     white-space: nowrap;
     overflow: hidden;
+    border-right: 2px solid white;
     width: 0;
     animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite;
 }
