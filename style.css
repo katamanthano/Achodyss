@@ -1,0 +1,36 @@
+/* Le body occupe toute la hauteur de l'écran et applique un fond de couleur unie */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #c45824;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centrage du logo */
+.logo-container {
+    text-align: center;
+}
+
+/* Animation du logo avec un effet "pop" */
+.logo {
+    max-width: 100%;
+    height: auto;
+    animation: popIn 1s ease-out forwards;
+}
+
+/* Définition de l'animation */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
