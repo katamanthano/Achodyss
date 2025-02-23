@@ -7,6 +7,8 @@ body, html {
     justify-content: center;
     align-items: flex-start;
     padding-top: 100px;
+    overflow-x: hidden;  /* Désactive le défilement horizontal */
+    touch-action: manipulation;  /* Améliore la gestion du toucher */
 }
 
 /* Centrage du logo */
