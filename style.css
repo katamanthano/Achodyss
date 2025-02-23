@@ -1,4 +1,4 @@
-/* CSS existant */
+/* Le body occupe toute la hauteur de l'écran et applique un fond de couleur unie */
 body, html {
     height: 100%;
     margin: 0;
@@ -21,16 +21,19 @@ footer {
     font-size: 14px;
 }
 
+/* Centrage du logo */
 .logo-container {
     text-align: center;
 }
 
+/* Animation du logo avec un effet "pop" */
 .logo {
     max-width: 100%;
     height: auto;
     animation: popIn 1s ease-out forwards;
 }
 
+/* Définition de l'animation */
 @keyframes popIn {
     0% {
         transform: scale(0);
