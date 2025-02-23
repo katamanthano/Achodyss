@@ -46,18 +46,11 @@ footer {
     }
 }
 
-/* Nouveau CSS pour la boîte de dialogue et le visage */
+/* Nouveau CSS pour la boîte de dialogue */
 .dialog-container {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin: 20px;
-}
-
-.character-face {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
 }
 
 .dialog-box {
@@ -65,12 +58,11 @@ footer {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 20px;
-    max-width: 90vw; /* Utilisation de 90% de la largeur de l'écran */
+    max-width: 90vw;  /* Utilisation de 90% de la largeur de l'écran */
     width: 100%;
     box-sizing: border-box;
-    margin: 0 10px; /* Espacement latéral pour éviter le débordement */
+    margin: 0 10px;
 }
-
 
 .dialog-text {
     font-size: 18px;
