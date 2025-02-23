@@ -58,11 +58,12 @@ footer {
     border: 2px solid #fff;
     border-radius: 10px;
     padding: 20px;
-    max-width: 90vw;  /* Utilisation de 90% de la largeur de l'écran */
+    max-width: 90%;  /* Réduit à 90% de la largeur de l'écran */
     width: 100%;
     box-sizing: border-box;
-    margin: 0 10px;
+    margin: 0 5%;
 }
+
 
 .dialog-text {
     font-size: 18px;
