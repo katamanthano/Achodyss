@@ -3,60 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codec MGS</title>
-    <style>
-        body {
-            background-color: black;
-            color: #33ff33;
-            font-family: 'Courier New', monospace;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .codec-container {
-            border: 3px solid #33ff33;
-            padding: 20px;
-            width: 80%;
-            max-width: 500px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .image-container {
-            width: 100px;
-            height: 100px;
-            background: url('https://example.com/face.png') no-repeat center;
-            background-size: cover;
-            border: 2px solid #33ff33;
-            margin-bottom: 10px;
-        }
-        .text-box {
-            border: 2px solid #33ff33;
-            padding: 10px;
-            width: 90%;
-            min-height: 50px;
-        }
-    </style>
+    <title>Logo Pop</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="codec-container">
-        <div class="image-container"></div>
-        <div class="text-box" id="codec-text"></div>
+    <div class="logo-container">
+        <img src="pologo.png" alt="Logo" class="logo">
     </div>
-    <script>
-        const text = "Snake, tu dois récupérer les documents secrets...";
-        let index = 0;
-        function typeText() {
-            if (index < text.length) {
-                document.getElementById("codec-text").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeText, 50);
-            }
-        }
-        window.onload = typeText;
-    </script>
 </body>
 </html>
